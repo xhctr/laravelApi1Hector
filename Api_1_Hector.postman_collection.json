@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "14caff97-d90c-4cd0-880a-255a7ec1d7f6",
+		"name": "Api_1_Hector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30647522"
+	},
+	"item": [
+		{
+			"name": "Get_Peticiones",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "MisPeticiones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/mispeticiones",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mispeticiones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peticiones(ID)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/peticiones/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"peticiones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePeticiones",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/peticiones/1?titulo=Prueba 2&descripcion=Esto es un test&destinatario=Todos",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"peticiones",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "titulo",
+							"value": "Prueba 2"
+						},
+						{
+							"key": "descripcion",
+							"value": "Esto es un test"
+						},
+						{
+							"key": "destinatario",
+							"value": "Todos"
+						},
+						{
+							"key": "firmantes",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "estado",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "categoria_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "created_at",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "updated_at",
+							"value": "2024-02-26T08:38:14.000000Z",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Firma",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/peticiones/firmar/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"peticiones",
+						"firmar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cambiar estado",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/peticiones/estado/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"peticiones",
+						"estado",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePeticiones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/peticiones?titulo=Prueba nueva&descripcion=Esto es un test de crear&destinatario=Todos&firmantes=0&estado=&user_id=1&categoria_id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"peticiones"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "titulo",
+							"value": "Prueba nueva"
+						},
+						{
+							"key": "descripcion",
+							"value": "Esto es un test de crear"
+						},
+						{
+							"key": "destinatario",
+							"value": "Todos"
+						},
+						{
+							"key": "firmantes",
+							"value": "0"
+						},
+						{
+							"key": "estado",
+							"value": ""
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "categoria_id",
+							"value": "1"
+						},
+						{
+							"key": "created_at",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "updated_at",
+							"value": "2024-02-26T08:38:14.000000Z",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
